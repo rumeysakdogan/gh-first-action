@@ -8,3 +8,11 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done Bye!"
+  second-job:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Testing multi-line commands
+       run: |
+         echo "First output"
+         echo "Second output"
+        
